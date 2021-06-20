@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ChartDataModel;
+use App\Models\ChartDataModel;
 class ChartDataController extends Controller
 {
    function onAllSelect(){
-       $result=ChartDatamodel::all();
+       $result=ChartDataModel::all();
        return $result;
    }
 }
